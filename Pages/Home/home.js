@@ -9,13 +9,14 @@ function Home({navigation}){
     function gotoPhoto(){
         navigation.navigate('PhotoPage');
     }
-    function gotoMap(){
-        navigation.navigate('MapPage');
+    function gotoCamera(){
+        navigation.navigate('CameraPage');
     }
     return(
      <View style={Styles.container}>
         <View style={Styles.header_container}>
-        <Button text="Fotograf Ekranina git" onPress={gotoPhoto}/>
+        <Button text="Fotograf Seçme Ekranina git" onPress={gotoPhoto}/>
+        <Button text="Fotograf Çekme Ekranina git" onPress={gotoCamera}/>
         </View>
     </View>
 
